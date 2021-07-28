@@ -1,10 +1,4 @@
-def std_weight(height,gender):
-    if gender=="여성":
-        standard=height*height*21
-        print("키 {0}cm 여자의 표준 체중은 {1}kg 입니다.".format(height*100,round(standard,2)))
-    else:
-        standard=height*height*22
-        print("키 {0}cm 남자의 표준 체중은 {1}kg 입니다.".format(height*100,round(standard,2)))
-  
-    
-std_weight(1.75,"남자")
+for i in range(1,51):
+    with open(str(i)+"주차.txt",'w',encoding='utf8') as report:
+        report.write("-"+str(i)+"주차 주간보고 -\n이름 :\n부서 :\n업무요약 : ")
+        
